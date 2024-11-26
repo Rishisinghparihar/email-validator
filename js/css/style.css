@@ -33,13 +33,44 @@ ul >li>a:hover{
 
 main{
     padding: 2px;
-    min-height: 90vh
+    min-height: 100vh
+}
+
+.logo img{
+    padding: 0;
+    width: 18px;
+    filter: invert(1);
 }
 
 .container{
     max-width: 80vw;
     margin: auto;
     padding: 20px;
+}
+
+.container h1{
+    padding: 12px 0;
+}
+
+input [type='text']{
+    min-width: 24vw;
+    padding: 3px 11px;
+    border: 3px solid;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.btn{
+    background:black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resultcont div::first-letter{
+    text-transform: uppercase;
 }
 
 footer{
@@ -53,10 +84,6 @@ footer{
 }
 
 @media only screen and (max-width: 600px){
-    body{
-        background-color: aqua;
-    }
-
     .container{
         font-size: 12px;
     }
@@ -67,7 +94,14 @@ footer{
 
     .logo{
         padding: 6px 0;
+        font-size: 15px;
     }
+
+    
+    .logo span{
+        font-size: 20px;
+    }
+
 
     .logo img{
         padding: 0;
